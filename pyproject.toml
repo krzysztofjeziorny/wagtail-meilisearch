@@ -10,7 +10,7 @@ readme = "README.md"
 homepage = "https://github.com/hactar-is/wagtail-meilisearch"
 repository = "https://github.com/hactar-is/wagtail-meilisearch"
 keywords = ["wagtail", "django", "search", "meilisearch"]
-classifiers=[
+classifiers = [
     'Environment :: Web Environment',
     'Framework :: Django',
     'Framework :: Wagtail',
@@ -22,20 +22,18 @@ classifiers=[
     'Topic :: Internet :: WWW/HTTP',
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
 ]
-include = [
-    "LICENSE",
-]
+include = ["LICENSE"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">3.8"
 
-arrow = "^1.2.3"
-meilisearch = "^0.30.0"
+arrow = ">1.2.3,<1.4.0"
+meilisearch = ">0.30,<0.35"
 wagtail = ">5,<7"
 
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = ">5,<9"
 
 [build-system]
 requires = ["poetry-core>=1.0.8"]
